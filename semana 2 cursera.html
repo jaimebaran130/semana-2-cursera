@@ -76,11 +76,38 @@ body{
 #title-three{
   background-color: orange;
 }
+
+/************* large divices only************/
+
+@media (min-width: 1200px) {
+
+  #p1{
+    width: 80px;
+  }
+  #p2{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/*************** medium devices only **********/
+
+@media (min-width: 992) and (max-width: 1199px) {
+  #p1{
+    width: 50px;
+  }
+  #p2{
+    width: 150px;
+    height: 150px;
+  }
+}
    </style>
 
 
 </head>
 <body>
+  <p id="p1"></p>
+  <p id="p2"></p>
   <div class="container">
     <div class="row">
 
